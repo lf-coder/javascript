@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    console.log(new Array([1, 2, 3]));//输出[1,2,3]
+    console.log(new Array(['1']));//输出['1']
+    console.log(new Array(7));//输出长度为7的数组
+
+    //of方法，相比上面不同的是，传入数字不是指定长度
+    console.log(Array.of(7));
+
+    //from方法，传入数组/伪数组对象/字符串
+    console.log(Array.from([1, 2, 3]));
+    console.log(Array.from({length: 0}));
+    console.log(Array.from('123'));
+</script>

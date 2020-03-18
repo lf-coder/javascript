@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //谈作用域就必须谈变量，因为只有变量才会有作用域，没有变量就没有作用域之说
+    if(1){
+        var a=1;
+        function f() {
+
+        }
+    }
+    console.log(a);//输出1
+    console.log(f);//输出f
+
+    if(0){//这里都不会进去
+        var a1=1;
+        function f1() {
+
+        }
+    }
+    console.log(a1);//输出undefined
+    console.log(f1);//输出undefined
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //基本对象解构{key:别名}
+    let {name: name, age: age} = {name: 'lf', age: 23};
+    console.log(name + ' ' + age);
+    //简写，如果key和别名相同可以简写
+    let {name1, age1} = {name1: 'lf', age1: 23};
+    console.log(name1 + ' ' + age1);
+    //默认值，当赋值是undefined时使用默认值
+    let {name2: pname2, age2: page2, sex2: psex2 = '男'} = {name2: 'lf', age2: 23};
+    console.log(pname2 + ' ' + page2 + ' ' + psex2);
+</script>

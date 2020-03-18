@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    //es5中，是先查找变量的声明，再使用变量的
+    //1.var 只会提前声明  function 既会声明又会定义
+    //2.全局作用域下使用var声明的变量都在window对象下
+    console.log(a);//输出undefined
+    console.log(f);//输出函数本身
+    var a=1;
+    function f() {
+        console.log('hhh');
+    }
+
+    console.log('a' in window);
+</script>

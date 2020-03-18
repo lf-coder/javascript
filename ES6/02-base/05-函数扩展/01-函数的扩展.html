@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //参数默认值
+    //es5
+    function fun1(name, age) {
+        //这样设置默认值会有问题，如果age是0，也会使用默认值
+        name = name || 'lf';
+        age = age || 23;
+        console.log(`${name} ${age}`);
+    }
+
+    //es6，当对应参数是undefined的时候使用默认值
+    function fun2(name = 'lf', age = 23) {
+        console.log(`${name} ${age}`);
+    }
+
+    //参数解构
+    function fun3({name = 'lf', age = 23}) {
+        console.log(`${name} ${age}`);
+    }
+</script>

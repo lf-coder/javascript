@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //1.let定义的变量不会提前声明
+    //2.不能重复定义
+    //3.不会给window增加变量。使用dir(f)在[[scope]]中可以看到，let声明的变量放在[[script]]这块内存中。
+    //4.let定义的变量的作用域是最近的{}，var定义变量的作用域是最近的函数作用域。重点是：变量的作用域是什么
+    let a=1;
+    console.log('a' in window);
+
+    function f() {
+    }
+    console.dir(f);
+
+    {
+        let x=0;
+        var y=1;
+    }
+    console.log(x);//报错
+    console.log(y);
+</script>

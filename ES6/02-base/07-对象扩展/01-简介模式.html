@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //1.key:value简写
+    let name = 'lf';
+    var obj_old = {name: name};
+    let obj = {name};
+
+    //2.值是函数
+    var obj1_old = {
+        fn: function () {
+
+        }
+    }
+    let obj1 = {
+        fn() {
+        }
+    }
+
+    //3.es5对象的键只能是基本数据类型，es6中键可以使用[]来让表达式做为键
+    let name_key1 = 'na';
+    let obj3 = {
+        [name_key1 + 'me']: 'lf'
+    }
+    console.log(obj3);
+</script>
